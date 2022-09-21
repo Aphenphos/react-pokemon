@@ -3,7 +3,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     border: 1px solid black;
-    text-align: center;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
 }
 
 .poke-img {
