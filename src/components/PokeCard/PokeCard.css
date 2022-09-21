@@ -1,0 +1,11 @@
+.poke-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.poke-img {
+    max-width: 240px;
+}

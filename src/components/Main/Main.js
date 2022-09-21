@@ -1,6 +1,7 @@
 import { usePokemon } from '../../hooks/usePokemon';
-import Select from '../../Select/Select';
+import Select from '../Select/Select';
 import PokeCard from '../PokeCard/PokeCard';
+import './Main.css';
 
 export default function Main() {
   const { pokemon, loading, types, setSelectedType } = usePokemon();
@@ -15,9 +16,9 @@ export default function Main() {
       <Select options={types} changeHandler={setSelectedType} />
             
       <div id="poke-main-container">
-        {pokemon.map((poke) => {
-          <PokeCard key={poke.id} {...poke}></PokeCard>;
-        })}
+        {pokemon.map((poke) => (
+          <PokeCard key={poke.id} {...poke}></PokeCard>
+        ))}
       </div>
     </main>
   );
