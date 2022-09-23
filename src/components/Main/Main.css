@@ -1,0 +1,8 @@
+main {
+    background-color: rgb(60, 60, 60);
+}
+
+#poke-main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
