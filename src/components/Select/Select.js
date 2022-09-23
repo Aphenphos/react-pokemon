@@ -1,5 +1,6 @@
 export default function Select({ options, changeHandler }) {
   return (
+    
     <select onChange={(e) => changeHandler(e.target.value)}>
       <option value="">all</option>
       {options.map((opt) => (
